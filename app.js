@@ -14,7 +14,7 @@ console.log(salePrice());
 // Math.round() - ამრგვალებს რიცხვს უახლოეს მთელამდე.
 // // დაწერეთ ფუნქცია, რომელიც Math.random() ფუნქციის გამოყენებით დააგენერირებს და დააბრუნებს 0-დან 100-მდე შემთხვევით რიცხვს.
 function getRandomArbitrary(min = 0, max = 100) {
-  return Math.random() * (max - min) + min;
+  return Math.round(Math.random() * (max - min) + min);
 }
 console.log(getRandomArbitrary());
 
